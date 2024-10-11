@@ -957,7 +957,7 @@ main {
 .project-img {
   position: relative;
   width: 100%;
-  height: 100%;
+  height: auto;
   border-radius: 16px;
   overflow: hidden;
   margin-bottom: 15px;
@@ -1899,4 +1899,11 @@ textarea.form-input::-webkit-resizer { display: none; }
 /* Add hover effect */
 .drive-button:hover {
   background-color: #357ae8;
+}
+
+@media (max-width: 768px) {
+  project-img {
+    width: 90%; /* عرض أقل للشاشات الصغيرة */
+    height: auto;
+  }
 }
